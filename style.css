@@ -1,9 +1,88 @@
 /********** Template CSS **********/
+
+@media screen and (max-width: 768px) {
+    .text-slide1 {
+        font-size: 30px !important;
+        color: #fff;
+    }
+
+    .slide1{
+        padding: 50px 30px 400px 30px !important;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pd2 {
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+
+    .px-5 {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .carousel-control-prev{
+        display: none;
+    }
+
+    .carousel-control-next{
+        display: none;
+    }
+
+    .text-modelos{
+        font-size: 15px !important;
+    }
+
+    .display-5 {
+        font-size: 25px !important;
+    }
+
+    .text-dif-sobre{
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 200px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 300px;
+    }
+}
+
+
 :root {
     --primary: #f13824;
     --secondary: #5F656F;
     --light: #F5F5F5;
     --dark: #02245B;
+}
+
+.slide1{
+    width: 100%;
+    padding: 400px 30px 400px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-slide1 {
+    font-size: 80px;
+    color: #fff;
 }
 
 .cor_tema{
@@ -24,12 +103,25 @@
 }
 
 #sobre {
-    padding: 80px 0 100px 0 !important;
+    padding: 80px 25px 100px 25px !important;
 }
 
 #servicos {
-    padding: 120px 0 120px 0 !important;
+    padding: 120px 25px 120px 25px !important;
 }
+
+#modelos {
+    padding: 20px 25px 70px 25px !important;
+}
+
+#diferencial {
+    padding: 20px 25px 70px 25px !important;
+}
+
+#contato {
+    padding: 20px 25px 70px 25px !important;
+}
+
 
 .back-to-top {
     position: fixed;
@@ -51,18 +143,41 @@
     color: #fff !important;
 }
 
-.ico-whats i{
-    color: #1dae43;
-    font-size: 60px;
+.img_whats{
+    width: 60px;
 }
 
 .ico-whats {
     position: fixed;
-    top: 90%;
-    left: 0.6%;
+    top: 91%;
+    right: 0.6%;
     padding: 10px;
     z-index: 10000000;
 }
+
+/*ANIMAÇÃO WHATS*/
+.pulse {
+  border-radius: 50%;
+  position: relative;
+    background: #fff;
+    -webkit-box-shadow: #4fcc5d;
+    box-shadow: 0 0 0 0 #4fcc5d;
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(.66, 0, 0, 1);
+}
+.pulse:hover
+{
+  -webkit-animation: none;animation: none;
+}
+
+@-webkit-keyframes pulse {to {-webkit-box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {-webkit-box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+
+
+/**/
 
 
 .logo-footer{
@@ -677,19 +792,7 @@ h6,
     z-index: 1;
 }
 
-@media (min-width: 768px) {
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 200px;
-    }
-}
 
-@media (min-width: 992px) {
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 300px;
-    }
-}
 
 .testimonial-carousel .owl-nav {
     position: absolute;
@@ -749,6 +852,7 @@ h6,
 /*** Footer ***/
 .footer {
     color: #B0B9AE;
+    padding: 20px 25px 70px 25px !important;
 }
 
 .footer .btn.btn-link {
